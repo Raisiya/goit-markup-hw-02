@@ -16,7 +16,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--main-text-color);
-  background-color: var(--main-background-color);
+  background-color: var(--main-title-color);
 }
 
 .visually-hidden {
@@ -160,13 +160,19 @@ body {
 }
 .adress-link1 {
   line-height: 1.71;
-  color: var(--main-title-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 .adress-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.adress-link:hover,
+.adress-link:focus,
+.adress-link1:hover,
+.adress-link1:focus {
+  color: var(--first-button-color);
 }
 .logo-link {
   font-family: Raleway;
@@ -192,7 +198,9 @@ body {
   color: var(--second-title-color);
   background-color: var(--second-button-color);
 }
-.filtr-button:hover {
+.filtr-button:hover,
+.filtr-button:focus,
+.filtr-button:active {
   color: var(--first-button-color);
   background-color: var(--accent-color);
 }
